@@ -1,0 +1,3 @@
+# To select the table
+
+select * from table;
