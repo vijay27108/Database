@@ -1,3 +1,13 @@
-# To select the table
+# How to create a new table
+create table test(
+    id INT,
+    name VATCHAR(50),
+    age INT
+)
 
+# How to drop the table
+drop table test;
+
+# How to check the table
 select * from table;
+
