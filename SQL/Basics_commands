@@ -4,7 +4,6 @@ create table test(
     name VATCHAR(50),
     age INT
 )
-
 # How to drop the table
 drop table test;
 
