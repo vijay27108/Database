@@ -45,3 +45,15 @@ select * from test where id in (2,3);
 
 -- How to select the approx
 select * from test where name LIKE '%Ravi';
+
+-- Before and after 
+select * from test where name LIKE '%Rak%';
+
+-- Greater then id number
+select * from test where id >1;
+
+-- Greater and less than
+select * from test where id >1 and id<3;
+
+-- use BETWEEN 
+select * from test where id BETWEEN 1 and 3;
