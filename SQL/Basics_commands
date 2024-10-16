@@ -1,35 +1,47 @@
-# Create a database
+-- Create a database
 create database test;
 
-# To delete the database
+-- To delete the database
 drop database test;
-# Select the database
+-- Select the database
 # use test;
 
-# How to create a new table
+-- How to create a new table
 create table test(
     id INT,
     name VATCHAR(50),
     age INT
 )
-# How to drop the table
+-- How to drop the table
 drop table test;
 
-# How to check the table with all columns
+-- How to check the table with all columns
 select * from table;
 
-# To select the particular table
+-- To select the particular table
 select name from test;
 
-# To select multiple columns from the table
+-- To select multiple columns from the table
 select id,name..... from test;
 
-# select 'column_name' from table_name;
+-- select 'column_name' from table_name;
 
-# How to enter the data into table
+-- How to enter the data into table
 insert into test(id,name,age)
 values(1,'Rakesh',30)
 
-# How to delete the row
+-- How to delete the row
 delete from table where name = 'Rakesh';
 
+-- How to select the unique name in the columns
+select dictinct name from test;
+
+-- To select the particular name
+select name from test where name LIKE 'Ravi';
+select * from test where name = 'Ravi';
+-- To choose multiple groups
+select * from test where name in ('Ravi','Rakesh');
+select * from test where id in (2,3);
+
+-- How to select the approx
+select * from test where name LIKE '%Ravi';
