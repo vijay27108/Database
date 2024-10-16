@@ -31,7 +31,7 @@ insert into test(id,name,age)
 values(1,'Rakesh',30)
 
 -- How to delete the row
-delete from table where name = 'Rakesh';
+delete from where name = 'Rakesh';
 
 -- How to select the unique name in the columns
 select dictinct name from test;
@@ -57,3 +57,17 @@ select * from test where id >1 and id<3;
 
 -- use BETWEEN 
 select * from test where id BETWEEN 1 and 3;
+
+-- How to add new column by using existing columns
+select id , id+3 as new_id, name from test;
+
+-- add new column and create a new table
+SELECT id, id + 3 AS new_id, name INTO test2 FROM test;
+
+--  How to update table 
+update test3
+set name ='Rahul'
+where name = 'Ravi';
+
+
+
