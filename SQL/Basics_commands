@@ -1,3 +1,11 @@
+# Create a database
+create database test;
+
+# To delete the database
+drop database test;
+# Select the database
+# use test;
+
 # How to create a new table
 create table test(
     id INT,
@@ -7,6 +15,21 @@ create table test(
 # How to drop the table
 drop table test;
 
-# How to check the table
+# How to check the table with all columns
 select * from table;
+
+# To select the particular table
+select name from test;
+
+# To select multiple columns from the table
+select id,name..... from test;
+
+# select 'column_name' from table_name;
+
+# How to enter the data into table
+insert into test(id,name,age)
+values(1,'Rakesh',30)
+
+# How to delete the row
+delete from table where name = 'Rakesh';
 
