@@ -70,4 +70,29 @@ set name ='Rahul'
 where name = 'Ravi';
 
 
+--  Working with two or three tables
 
+--  Inner join
+-- Returns only matching rows from both tables. 
+select A.firstname, A.lastname, B.salary from employee A INNER JOIN salary B on A.id=B.id
+-- outer joins 
+-- Returns all rows from one or both tables, with NULLs for non-matching rows.
+--  left join 
+-- Select all columns from the left table and only the columns with matching rows from the right
+--  table for an inner join.
+select A.firstname,A.firstname, B.salary from employee A LEFT JOIN salary B on A.id = B.id
+select A.firstname,A.lastname,B.phone from employee A LEFT JOIN phone B ON A.id=B.id
+--  right join
+-- Select all columns from the right table and only the columns with matching rows from the left
+--  table for a right join
+select A.firstname,A.lastname, B.salary from employee A RIGHT JOIN salary B on A.id = B.id
+select A.firstname,A.lastname,B.phone from employee A RIGHT JOIN phone B ON A.id=B.id
+-- Full outer join
+-- Select all columns from both tables, including all rows from both tables, and fill in with NULLs 
+-- where there are no matches.
+
+
+-- cross join
+-- A cross join returns the Cartesian product of two tables, meaning it combines all rows from the 
+-- first table with all rows from the second table. This results in every possible combination of 
+-- rows from the two tables.
