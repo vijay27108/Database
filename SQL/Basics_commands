@@ -89,10 +89,15 @@ select A.firstname,A.lastname,B.phone from employee A RIGHT JOIN phone B ON A.id
 -- Full outer join
 -- Select all columns from both tables, including all rows from both tables, and fill in with NULLs 
 -- where there are no matches.
-
-
-
+select A.firstname,A.lastname,B.phone from employee A FULL OUTER JOIN phone B on A.id=B.id
 -- cross join
 -- A cross join returns the Cartesian product of two tables, meaning it combines all rows from the 
 -- first table with all rows from the second table. This results in every possible combination of 
 -- rows from the two tables.
+select * from employee CROSS JOIN salary
+
+or
+
+select * from employee, salary;
+
+-- Date functions
