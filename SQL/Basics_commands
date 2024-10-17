@@ -69,7 +69,6 @@ update test3
 set name ='Rahul'
 where name = 'Ravi';
 
-
 --  Working with two or three tables
 
 --  Inner join
@@ -90,6 +89,7 @@ select A.firstname,A.lastname,B.phone from employee A RIGHT JOIN phone B ON A.id
 -- Full outer join
 -- Select all columns from both tables, including all rows from both tables, and fill in with NULLs 
 -- where there are no matches.
+
 
 
 -- cross join
