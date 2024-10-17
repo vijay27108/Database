@@ -101,3 +101,14 @@ or
 select * from employee, salary;
 
 -- Date functions
+SELECT NOW()
+--  How to add date column
+ALTER TABLE employee
+ADD COLUMN created_at TIMESTAMP DEFAULT NOW();
+
+-- To calculate the average of the column value
+select AVG(salary) from salary;
+--  To count the number of enteries
+select count(salary) from salary;
+--  To calculate the sum of the column value
+select sum(salary) from salary;
